@@ -1,0 +1,36 @@
+---
+title: "Semana1 > Data Types - R obejcts and attributes"
+output: html_notebook
+---
+
+```{r}
+print('Hello world!')
+```
+
+Objects possuem 5 classes básicas ou atômicas de objetos, como:
+```{r}
+character = "Hello world!"
+numeric = "0, 1, 2, 3, 4..."
+integer = "6, 7, 8, 9..."
+complex = "Contas aritméticas: +; -; *; / and ^"
+logical = "True or False"
+```
+
+Vector - Vetores podem conter um único tipo de classe, por exemplo:
+```{r}
+number <- c(1, 2, 3, 4, 5, 6)
+print(number)
+phrase <- c("Hello world!", "Blastoff")
+print(phrase)
+arithmetic <- c(1+2)
+arithmetic 
+```
+list() - A lista pode conter todas as classes citadas acima, por exemplo:
+```{r}
+test_list <- list("Hello world", 0.5, TRUE, c(1, 2, 4))
+test_list
+#Atribuindo nome aos elementos da lista
+test_list <- list(msg = "Hello world!", nr = 0.5, bool = TRUE, int = c(1,2,3,100))
+test_list
+```
+

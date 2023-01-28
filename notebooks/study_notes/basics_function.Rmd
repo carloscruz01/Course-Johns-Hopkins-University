@@ -1,0 +1,43 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+Noções básicas de Função; Funções e Tipos de Dados do R /1.2 basics
+
+Em R, função é um conjuntos de instruções que realizam uma tarefa específica. E, elas geralmente são acompanhadas por parenteses que possuíram argumentos ou parâmetros para iniciar a função.
+
+É possível incluir argumentos dentro de funções.
+```{r}
+#Option2
+log(20, 10)
+#Option2
+log(base = 10,  x = 20)
+```
+
+Exemplo:
+```{r}
+#Função para calcular a media de X
+calcula_media <- function(vetor) {
+  media <- mean(vetor)
+  return(media)
+}
+
+```
+
+Combinando função com uma equação do 2ºgrau em forma de bhaskara para automatizar o processo de resolução de uma quação deste tipo, porém com valores diferentes.
+```{r}
+autom_equa <- function() {
+  a <- 3
+  b <- 2
+  c <- -1
+  delta_1 = (-b + sqrt(b^2 - 4*a*c)) / (2*a)
+  delta_2 = (-b - sqrt(b^2 - 4*a*c)) / (2*a)
+  print(delta_1)
+  print(delta_2)
+}
+autom_equa()
+```
+
+
+
